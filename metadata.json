@@ -1,0 +1,6 @@
+{
+  "name": "CraftPass",
+  "description": "Digital preservation and authentic craft platform connecting heritage artisans with conscious buyers through verified provenance, transparent pricing, and immutable digital records.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
