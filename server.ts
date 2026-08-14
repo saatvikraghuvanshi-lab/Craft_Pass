@@ -1,6 +1,5 @@
 import express from 'express';
 import path from 'path';
-import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI } from '@google/genai';
 import QRCode from 'qrcode';
 
@@ -225,6 +224,7 @@ Evaluate whether this meets certified GI handmade standards. Return JSON with:
 async function startServer() {
   // Vite middleware for development vs static build in production
   if (process.env.NODE_ENV !== 'production') {
+    const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: 'spa',
