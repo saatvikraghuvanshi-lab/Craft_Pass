@@ -3,7 +3,9 @@
   "outputDirectory": "dist",
   "routes": [
     { "src": "/api/health", "dest": "/api/health.ts" },
-    { "src": "/api/(.*)", "dest": "/api/[...path].ts" },
+    { "src": "/api/ai/story", "dest": "/api/ai/story.ts" },
+    { "src": "/api/ai/verify-analysis", "dest": "/api/ai/verify-analysis.ts" },
+    { "src": "/api/(.*)", "dest": "/api/not-found.ts" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
